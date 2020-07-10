@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="563.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.hslu.swde.wda.application.controller.RegisterController">
+   <children>
+      
+      <Button layoutX="310.0" layoutY="391.0" mnemonicParsing="false" onAction="#registerCustomer" text="Registrieren" />
+      <TextField fx:id="txtName" layoutX="84.0" layoutY="68.0" />
+      <TextField fx:id="txtSurName" layoutX="84.0" layoutY="130.0" />
+      <TextField fx:id="txtEmail" layoutX="84.0" layoutY="190.0" />
+      <TextField fx:id="txtStreet" layoutX="390.0" layoutY="68.0" />
+      <TextField fx:id="txtZip" layoutX="390.0" layoutY="130.0" />
+      <TextField fx:id="txtCity" layoutX="390.0" layoutY="190.0" />
+      <PasswordField fx:id="pwdCustomer" layoutX="84.0" layoutY="244.0" />
+      <Label layoutX="84.0" layoutY="51.0" text="Vorname" />
+      <Label layoutX="84.0" layoutY="113.0" text="Nachname" />
+      <Label layoutX="84.0" layoutY="173.0" text="Email" />
+      <Label layoutX="389.0" layoutY="51.0" text="Strasse" />
+      <Label layoutX="389.0" layoutY="113.0" text="Postleitzahl" />
+      <Label layoutX="390.0" layoutY="173.0" text="Ort" />
+      <Label fx:id="lblResult" layoutX="202.0" layoutY="270.0" prefHeight="41.0" prefWidth="295.0" />
+      <Button layoutX="284.0" layoutY="466.0" mnemonicParsing="false" onAction="#back" text="zurück zur Login Seite" />
+      <Label layoutX="84.0" layoutY="226.0" text="Password" />
+   </children>
+</AnchorPane>

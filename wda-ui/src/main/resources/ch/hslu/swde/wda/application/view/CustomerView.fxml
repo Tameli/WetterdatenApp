@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="642.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.hslu.swde.wda.application.controller.CustomerController">
+<children>
+      <TextField fx:id="txtName" layoutX="23.0" layoutY="69.0" prefHeight="25.0" prefWidth="157.0" />
+      <TextField fx:id="txtSurName" layoutX="23.0" layoutY="119.0" prefHeight="25.0" prefWidth="157.0" />
+      <TextField fx:id="txtEmail" layoutX="23.0" layoutY="170.0" prefHeight="25.0" prefWidth="157.0" />
+      <TextField fx:id="txtStreet" layoutX="308.0" layoutY="69.0" prefHeight="25.0" prefWidth="157.0" />
+      <TextField fx:id="txtCity" layoutX="308.0" layoutY="119.0" prefHeight="25.0" prefWidth="157.0" />
+      <TextField fx:id="txtZip" layoutX="308.0" layoutY="170.0" prefHeight="25.0" prefWidth="157.0" />
+      <TextField fx:id="txtPassword" layoutX="23.0" layoutY="221.0" prefHeight="25.0" prefWidth="157.0" />
+      <Label layoutX="23.0" layoutY="14.0" text="Einstellungen" />
+      <Label layoutX="26.0" layoutY="51.0" text="Vorname" />
+      <Label layoutX="26.0" layoutY="101.0" text="Name" />
+      <Label layoutX="26.0" layoutY="203.0" text="Password" />
+      <Button layoutX="482.0" layoutY="523.0" mnemonicParsing="false" onAction="#showAllCities" text="Städte anzeigen" />
+      <Label layoutX="28.0" layoutY="153.0" text="Email" />
+      <Label layoutX="311.0" layoutY="51.0" text="Strasse" />
+      <Label layoutX="311.0" layoutY="101.0" text="Stadt" />
+      <Label layoutX="308.0" layoutY="153.0" text="Plz" />
+      <Button layoutX="306.0" layoutY="221.0" mnemonicParsing="false" onAction="#updateCustomer" text="Aktualisieren" />
+      <Button layoutX="624.0" layoutY="18.0" mnemonicParsing="false" onAction="#returnToLogin" text="Abmelden" />
+      <Label fx:id="lblError" layoutX="239.0" layoutY="257.0" prefHeight="51.0" prefWidth="448.0" text=" " textFill="#e10000" />
+      <Label layoutX="16.0" layoutY="292.0" text="Ort" />
+      <Button layoutX="266.0" layoutY="443.0" mnemonicParsing="false" onAction="#showLastDay" text="24h" />
+      <DatePicker fx:id="fromDate" layoutX="264.0" layoutY="352.0" prefHeight="25.0" prefWidth="157.0" />
+      <DatePicker fx:id="untillDate" layoutX="264.0" layoutY="407.0" prefHeight="25.0" prefWidth="157.0" />
+      <Button layoutX="330.0" layoutY="443.0" mnemonicParsing="false" onAction="#periodOfTime" text="Zeitperiode" />
+      <Button layoutX="28.0" layoutY="523.0" mnemonicParsing="false" onAction="#temperaturAverage" text="Durschn. Temp." />
+      <TextArea fx:id="txtAreaResult" layoutX="456.0" layoutY="311.0" prefHeight="200.0" prefWidth="255.0" />
+      <Button layoutX="139.0" layoutY="523.0" mnemonicParsing="false" onAction="#maxAndMinTemp" text="Max/Min Temp." />
+      <ListView fx:id="lvCity" layoutX="17.0" layoutY="310.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="28.0" layoutY="562.0" mnemonicParsing="false" onAction="#avgPressure" text="Durchschn. Luftdruck" />
+      <Label layoutX="268.0" layoutY="330.0" text="Startdatum" />
+      <Label layoutX="266.0" layoutY="385.0" text="Enddatum" />
+      <Button layoutX="609.0" layoutY="603.0" mnemonicParsing="false" onAction="#printAsText" text="Daten Exportieren" />
+      <Button layoutX="248.0" layoutY="523.0" mnemonicParsing="false" onAction="#progressTemperatur" text="Temperatur Verlauf" />
+      <Button layoutX="361.0" layoutY="603.0" mnemonicParsing="false" onAction="#progressHumidity" text="Luftfeuchtigkeit Verlauf" />
+      <Button layoutX="295.0" layoutY="562.0" mnemonicParsing="false" onAction="#progressPressure" text="Luftdruck Verlauf" />
+      <Button layoutX="167.0" layoutY="562.0" mnemonicParsing="false" onAction="#minMaxPressure" text="Max/Min Luftdruck" />
+      <Button layoutX="199.0" layoutY="603.0" mnemonicParsing="false" onAction="#minMaxHumidity" text="Max/Min Luftfeuchtigkeit" />
+      <Button layoutX="27.0" layoutY="603.0" mnemonicParsing="false" onAction="#averageHumidity" text="Durchschn. Luftfeuchtigkeit" />
+   </children></AnchorPane>

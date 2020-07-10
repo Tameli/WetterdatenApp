@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="563.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.hslu.swde.wda.application.controller.LoginController">
+   <children>
+      <Button layoutX="329.0" layoutY="374.0" mnemonicParsing="false" onAction="#showLastDay" text="24h" />
+      <Button layoutX="296.0" layoutY="230.0" mnemonicParsing="false" onAction="#login" text="Login Mitarbeiter" />
+      <TextField fx:id="txtUser" layoutX="273.0" layoutY="109.0" />
+      <Label layoutX="273.0" layoutY="85.0" text="UserID" />
+      <Label layoutX="273.0" layoutY="146.0" text="Passwort" />
+      <PasswordField fx:id="pwdField" layoutX="273.0" layoutY="172.0" />
+      <Label fx:id="lblError" layoutX="222.0" layoutY="273.0" prefHeight="36.0" prefWidth="321.0" textFill="#ff0202" />
+      <Label fx:id="lblResult" layoutX="222.0" layoutY="282.0" prefHeight="36.0" prefWidth="321.0" />
+      <ListView fx:id="lvCity" layoutX="47.0" layoutY="335.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextArea fx:id="txtAreaResult" layoutX="422.0" layoutY="335.0" prefHeight="200.0" prefWidth="265.0" />
+      <Button layoutX="310.0" layoutY="435.0" mnemonicParsing="false" onAction="#showAllCities" text="Alle Städte" />
+      <Button layoutX="67.0" layoutY="142.0" mnemonicParsing="false" onAction="#register" text="Registrieren" />
+      <TextField fx:id="txtEmail" layoutX="483.0" layoutY="109.0" />
+      <Label layoutX="483.0" layoutY="85.0" text="Email" />
+      <Label layoutX="483.0" layoutY="146.0" text="Passwort" />
+      <PasswordField fx:id="pwdCustomer" layoutX="483.0" layoutY="172.0" />
+      <Button layoutX="516.0" layoutY="230.0" mnemonicParsing="false" onAction="#loginCustomer" text="Login Kunde" />
+   </children>
+</AnchorPane>

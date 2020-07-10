@@ -1,0 +1,6 @@
+projectKey=ch.hslu.swde19hs.g06:g06-wda
+serverUrl=http://localhost:9000
+serverVersion=8.1.0.31237
+dashboardUrl=http://localhost:9000/dashboard?id=ch.hslu.swde19hs.g06%3Ag06-wda
+ceTaskId=AW_HvXN3HxZOM3K3ugYp
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AW_HvXN3HxZOM3K3ugYp

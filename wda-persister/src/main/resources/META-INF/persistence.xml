@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+	
+	<persistence-unit name="Fallstudie"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>ch.hslu.swde.wda.domain.Customer</class>
+		<class>ch.hslu.swde.wda.domain.Employee</class>
+		<class>ch.hslu.swde.wda.domain.City</class>
+		<class>ch.hslu.swde.wda.domain.WeatherReading</class>
+		<validation-mode>AUTO</validation-mode>
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:postgresql://stud.el.eee.intern:5432/wda_g06_db" />
+			<property name="javax.persistence.jdbc.user" value="swde_user_g06" />
+			<property name="javax.persistence.jdbc.password" value="pwd_g06_djavol3" />
+
+			<property name="eclipselink.ddl-generation.output-mode"
+				value="database" />
+
+			 <!--  SQL-Statements nicht ausgeben
+			<property name="eclipselink.logging.level" value="FINE"/>-->
+
+			<property name="eclipselink.ddl-generation" value="create-tables" />
+		</properties>
+	</persistence-unit>
+	
+	<!--<persistence-unit name="Fallstudie"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		<class>ch.hslu.swde.wda.domain.Customer</class>
+		<class>ch.hslu.swde.wda.domain.Employee</class>
+		<class>ch.hslu.swde.wda.domain.City</class>
+		<class>ch.hslu.swde.wda.domain.WeatherReading</class>
+		<validation-mode>AUTO</validation-mode>
+		<properties>
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:postgresql://localhost:5432/fallstudie_db" />
+			<property name="javax.persistence.jdbc.user" value="student" />
+			<property name="javax.persistence.jdbc.password" value="student_pwd" />
+
+			<property name="eclipselink.ddl-generation.output-mode"
+				value="database" />
+
+     	 SQL-Statements nicht ausgeben
+			<property name="eclipselink.logging.level" value="FINE"/>
+
+			<property name="eclipselink.ddl-generation" value="create-tables" /> 
+		</properties>
+	</persistence-unit>-->
+	
+	
+</persistence>
